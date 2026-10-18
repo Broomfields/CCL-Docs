@@ -430,7 +430,7 @@ After a PR requesting a version bump is merged, release automation performs this
 8. Package from the tag.
 9. Create the GitHub Release.
 
-The same release workflow supports manual dispatch for recovery. Recovery should be idempotent where practical. Trusted release/sync automation may commit directly to protected `main`; ordinary human Lab and Template changes remain PR-only.
+The same release workflow supports manual dispatch for recovery. Recovery should be idempotent where practical. Trusted release/sync automation may commit directly to protected `main`; ordinary Lab and Template changes remain PR-only.
 
 ### Design decisions
 
