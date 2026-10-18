@@ -5,7 +5,7 @@
 | Audience | Developers writing or reviewing Lab, Template, and experiment code |
 | Source | Design document v0.8 |
 | Status | Coding guidance derived from the intended design |
-| Companion | [Developer Architecture and Reference](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/developer-architecture.md) |
+| Companion | [Developer Architecture and Reference](../Docs/developer-architecture.md) |
 
 Use this document while implementing and reviewing code. Architecture and delivery contracts live in the companion reference. These standards translate existing design principles into practical rules and illustrative examples.
 
@@ -38,7 +38,7 @@ Use this document while implementing and reviewing code. Architecture and delive
 
 Shared code affects several experiments. Exploratory code serves a developing question. Distinguishing requirements from defaults keeps important boundaries reliable while allowing practical local choices.
 
-Source: [v0.8 principles](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#2-principles-and-boundaries) and [testing policy](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#9-testing-and-validation).
+Source: [v0.8 principles](../Docs/Archive/creative-coding-lab-design-v0.8.md#2-principles-and-boundaries) and [testing policy](../Docs/Archive/creative-coding-lab-design-v0.8.md#9-testing-and-validation).
 
 ## 2. Programming style and data
 
@@ -84,7 +84,7 @@ Plain data exposes the domain directly. Pure calculations make inputs and result
 
 The example names illustrate readable code. A project-wide casing convention and formatter remain implementation choices.
 
-Source: [v0.8 source layout](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#5-template-and-source-layout) and [state/model code](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#14-state-mutation-and-model-code).
+Source: [v0.8 source layout](../Docs/Archive/creative-coding-lab-design-v0.8.md#5-template-and-source-layout) and [state/model code](../Docs/Archive/creative-coding-lab-design-v0.8.md#14-state-mutation-and-model-code).
 
 ## 3. State and dependencies
 
@@ -118,7 +118,7 @@ Lab interaction   ← relevant Lab service or Lab reference
 
 Explicit dependencies reveal what a function can read or change. Small calculations are easy to reuse in different experiments. Coordinators retain enough context to organise updates and route effects through the appropriate owner.
 
-Source: [v0.8 ownership and mutation](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#13-responsibilities-and-data-flow).
+Source: [v0.8 ownership and mutation](../Docs/Archive/creative-coding-lab-design-v0.8.md#13-responsibilities-and-data-flow).
 
 ## 4. Naming and comments
 
@@ -152,7 +152,7 @@ body.position.y = initial_position.y
 
 Names carry context through calls and reviews. The comment explains a lifetime constraint that the assignments alone cannot express. Mathematical terms and established API names can remain concise where their meaning is clear.
 
-Source: [v0.8 coding practices](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#8-git-tracking-and-coding-practices).
+Source: [v0.8 coding practices](../Docs/Archive/creative-coding-lab-design-v0.8.md#8-git-tracking-and-coding-practices).
 
 ## 5. Functions and modules
 
@@ -190,7 +190,7 @@ shaders/        → experiment-specific graphics effects
 
 Guard clauses keep the main path easy to follow. Responsibility-based modules let related behaviour change together. Function length and complexity are review judgements informed by clarity; the design leaves numeric limits open.
 
-Source: [v0.8 module layout](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#5-template-and-source-layout) and [coding practices](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#8-git-tracking-and-coding-practices).
+Source: [v0.8 module layout](../Docs/Archive/creative-coding-lab-design-v0.8.md#5-template-and-source-layout) and [coding practices](../Docs/Archive/creative-coding-lab-design-v0.8.md#8-git-tracking-and-coding-practices).
 
 ## 6. Callbacks and Lab integration
 
@@ -238,9 +238,9 @@ The accessor exposes a live position reference for the capability reader. State 
 
 Typed controls make UI intent explicit. Named behaviour keeps declarations easy to scan and handlers easy to find. Live accessors preserve one authoritative domain state. Each side can evolve its implementation while keeping the ownership boundary clear.
 
-For error policy, lifecycle, and open API choices, use the [runtime reference](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/developer-architecture.md#5-lifecycle-and-scheduling).
+For error policy, lifecycle, and open API choices, use the [runtime reference](../Docs/developer-architecture.md#5-lifecycle-and-scheduling).
 
-Source: [v0.8 entity contracts](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#17-entity-registration-and-lifetime) and [instrumentation](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#22-instrumentation-and-parameter-controls).
+Source: [v0.8 entity contracts](../Docs/Archive/creative-coding-lab-design-v0.8.md#17-entity-registration-and-lifetime) and [instrumentation](../Docs/Archive/creative-coding-lab-design-v0.8.md#22-instrumentation-and-parameter-controls).
 
 ## 7. Tests and shared abstractions
 
@@ -291,9 +291,9 @@ Busted was chosen because the project author has used it on previous Lua and LÖ
 
 Behaviour-focused checks protect relationships the system relies on. Real bootstrap validation tests the path users take to obtain the dependency. Promotion adds shared maintenance obligations when reuse has established their value.
 
-The architecture reference specifies the [repository validation matrix](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/developer-architecture.md#12-engineering-and-validation).
+The architecture reference specifies the [repository validation matrix](../Docs/developer-architecture.md#12-engineering-and-validation).
 
-Source: [v0.8 testing](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#9-testing-and-validation) and [principles](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#2-principles-and-boundaries).
+Source: [v0.8 testing](../Docs/Archive/creative-coding-lab-design-v0.8.md#9-testing-and-validation) and [principles](../Docs/Archive/creative-coding-lab-design-v0.8.md#2-principles-and-boundaries).
 
 ## 8. Tooling, commits, and review
 
@@ -323,8 +323,8 @@ Source: [v0.8 testing](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Ar
 
 Focused changes make review and diagnosis easier. Shared scripts keep local and automated behaviour aligned. The PR records a complete proposed change, so it carries compatibility intent and release documentation.
 
-Release labels, workflow steps, protected-main automation, and distribution contracts are maintained in the [delivery reference](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/developer-architecture.md#13-releases-and-deployment).
+Release labels, workflow steps, protected-main automation, and distribution contracts are maintained in the [delivery reference](../Docs/developer-architecture.md#13-releases-and-deployment).
 
 Formatting tools, linter selections, exact casing rules, and API naming can be recorded when chosen during implementation. Current examples illustrate the principles above.
 
-Source: [v0.8 development practices](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#8-git-tracking-and-coding-practices) and [release contracts](/Users/shaun/Documents/GitHub/Creative-Coding-Lab/Docs/Archive/creative-coding-lab-design-v0.8.md#10-pull-requests-and-release-automation).
+Source: [v0.8 development practices](../Docs/Archive/creative-coding-lab-design-v0.8.md#8-git-tracking-and-coding-practices) and [release contracts](../Docs/Archive/creative-coding-lab-design-v0.8.md#10-pull-requests-and-release-automation).
