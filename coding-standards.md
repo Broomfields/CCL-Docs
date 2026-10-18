@@ -11,14 +11,36 @@ Use this document while implementing and reviewing code. Architecture and delive
 
 ## Contents
 
-- [1. Rule strength and scope](#1-rule-strength-and-scope)
-- [2. Programming style and data](#2-programming-style-and-data)
-- [3. State and dependencies](#3-state-and-dependencies)
-- [4. Naming and comments](#4-naming-and-comments)
-- [5. Functions and modules](#5-functions-and-modules)
-- [6. Callbacks and Lab integration](#6-callbacks-and-lab-integration)
-- [7. Tests and shared abstractions](#7-tests-and-shared-abstractions)
-- [8. Tooling, commits, and review](#8-tooling-commits-and-review)
+- [Creative Coding Lab: Coding Standards](#creative-coding-lab-coding-standards)
+  - [Contents](#contents)
+  - [1. Rule strength and scope](#1-rule-strength-and-scope)
+    - [Reasoning](#reasoning)
+  - [2. Programming style and data](#2-programming-style-and-data)
+    - [Language and framework references](#language-and-framework-references)
+    - [Example](#example)
+    - [Reasoning](#reasoning-1)
+  - [3. State and dependencies](#3-state-and-dependencies)
+    - [Example](#example-1)
+    - [Reasoning](#reasoning-2)
+  - [4. Naming and comments](#4-naming-and-comments)
+    - [Naming examples](#naming-examples)
+    - [Comment example](#comment-example)
+    - [Reasoning](#reasoning-3)
+  - [5. Functions and modules](#5-functions-and-modules)
+    - [Guard clause example](#guard-clause-example)
+    - [Module responsibilities](#module-responsibilities)
+    - [Reasoning](#reasoning-4)
+  - [6. Callbacks and Lab integration](#6-callbacks-and-lab-integration)
+    - [UI declaration example](#ui-declaration-example)
+    - [Accessor example](#accessor-example)
+    - [Reasoning](#reasoning-5)
+  - [7. Tests and shared abstractions](#7-tests-and-shared-abstractions)
+    - [Behaviour example](#behaviour-example)
+    - [Promotion path](#promotion-path)
+    - [Reasoning](#reasoning-6)
+  - [8. Tooling, commits, and review](#8-tooling-commits-and-review)
+    - [Review prompts](#review-prompts)
+    - [Reasoning](#reasoning-7)
 
 ## 1. Rule strength and scope
 
@@ -300,7 +322,7 @@ Source: [v0.8 testing](../Docs/Archive/creative-coding-lab-design-v0.8.md#9-test
 | Level | Rule |
 |---|---|
 | Default | Make small, focused development commits as work progresses. |
-| Requirement | Integrate ordinary human Lab/Template changes through reviewed, validated PRs. |
+| Requirement | Integrate ordinary Lab/Template changes through reviewed, validated PRs. |
 | Requirement | Supply exactly one release-intent label and the required PR documentation. |
 | Default | Share locally runnable POSIX script logic with GitHub workflows where practical. |
 | Requirement | Read authoritative version state from committed metadata. |
